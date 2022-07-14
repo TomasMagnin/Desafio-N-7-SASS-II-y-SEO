@@ -1,0 +1,105 @@
+
+/* ------------------------------------------------ Main Paginas Secuandarias ------------------------------------------------------------- */
+
+
+.main__cards {
+    background-color: var(--clr-card-back);
+    color: var(--clr-font);
+  }
+  .card {
+    background-color: orange;
+    img {
+        margin: 2px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+  .title__cards {
+    background-color: orangered;
+    border-radius: 10px;
+  }
+  
+  .card-body a:hover {
+    background-color: orangered;
+    transform: scale(1.05);
+    transition: all .3s;
+  }
+ 
+
+
+  /* ------------------------------------------------ Footer ---------------------------------------------------------- */
+
+
+
+.footer{
+
+    border: solid 2px whitesmoke;
+    background-color: var(--clr-card-back);
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "ft ft ft"
+    "fs1 fs2 fs3"
+    "fp fp fp";
+    &__titulo{
+        grid-area: ft;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    &__sec-1{
+        grid-area: fs1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__sec-2{
+        grid-area: fs2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center ;
+    }
+    &__sec-3{
+        grid-area: fs3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__pie{
+        border: solid 2px orange;
+        grid-area: fp;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    h4{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--clr-font);
+    }
+    
+    p{
+        color: var(--clr-font);
+        text-align: center;
+    }
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    li :hover{
+        color: orangered;
+    
+    }
+}
