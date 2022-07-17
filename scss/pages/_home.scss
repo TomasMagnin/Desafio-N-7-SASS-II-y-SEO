@@ -1,0 +1,70 @@
+/* ------------------------------------------------ Main Index ------------------------------------------------------------- */
+
+.card__main {
+    background-color: var(--clr-fondo);
+    border: black solid 3px;
+    background-color: var(--clr-card-back);
+}
+.card__container {
+        color: var(--clr-font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__titulo {
+            font-size: 2rem;
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        &__texto {
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        } 
+        &__gallery {
+            border: solid var(--clr-font) 3px;
+            background: var(--clr-fondo);
+            border-radius: 25px;
+            width: 70vw;
+            height: 70vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "1 2 3" "4 5 6";
+            justify-items: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            &__product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap; 
+                img {
+                    width: 13vw;
+                    margin: 10px;
+                    border: solid 2px var(--clr-card-back);
+                    border-radius: 8px;
+                    background-size: cover;
+                }
+                a{
+                    width:10vw;
+                    text-align: center;
+                    font-weight: 700;
+                    border: solid 2px var(--clr-card-back);
+                    text-decoration: none;
+                    background-color:  var(--clr-font);
+                    color: var(--clr-card-back);
+                    border-radius: 10px;
+                    &:hover {
+                        background-color: orange;
+                        transition: all .2s;
+                        transform: scale(1.05);
+                    }
+                } 
+            }       
+        }    
+}
+
+

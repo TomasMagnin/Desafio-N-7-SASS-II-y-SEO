@@ -1,0 +1,109 @@
+/* ------------------------------------ Media Querie 420px ----------------------------------------------------------- */
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+@media screen and (max-width: 444px) {
+    
+    .card__container {
+        &__titulo {
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+        }
+        &__texto {
+            text-align: center;
+            font-size: .9rem;
+        }
+        &__gallery {
+            height: 150vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: "1" "2" "3" "4" "5" "6";
+            justify-items: center;
+            align-items: center;
+            padding: 10px;
+            &__product{ 
+                img {
+                  margin: 2px;
+                  padding: 2px;
+                  width: 45vw;
+
+                }
+                a {
+                  width: auto;
+                  font-weight: 600;
+                }
+            }
+        }
+    }
+} 
+
+/* ------------------------------------------------- Mapa y Footer ---------------------------------------------------- */
+  @media screen and (max-width: 444px) {
+    .contact_div {
+        h3{
+        font-size: 1rem;
+        font-weight: 900;
+        }
+    }
+    .footer{
+        a {
+            font-size: 0.7rem;
+        }
+        h3 {
+          font-size: 0.8rem;
+        }  
+        &__sec-1 h3 {
+          margin-left: 25px;
+        }
+        &__pie h3 {
+          text-align: center;
+        }  
+    }
+}
+
+/*------------------------------------ Media Querie 768px ----------------------------------------------------------- */
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+  @media screen and (min-width: 445px) and (max-width: 768px) {
+    .card__Container {
+        margin-top: 10px;
+        &__titulo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-align: center;
+        }
+        &__texto {
+            text-align: center;
+            font-size: 1rem;
+        }  
+        &__gallery__product {
+            height: 75vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "1 2" "3 4" "5 6";
+            justify-items: center;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+            img {
+                margin: 2px;
+                padding: 2px;
+                width: 25vw;
+            }
+            a {
+                width: auto;
+                font-weight: 600;
+            }
+        }   
+    }
+/* ------------------------------------ Mapa ----------------------------------------------------------------------- */
+    .contact_title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+/* ------------------------------------ Footer ----------------------------------------------------------------------- */
+  .footer h4 {
+      font-size: 1.1rem;
+      padding: 5px;
+    }
+} 
