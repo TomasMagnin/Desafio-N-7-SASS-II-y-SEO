@@ -226,6 +226,124 @@ header {
   transition: all 0.3s;
 }
 
+/* ------------------------------------------------ Pagina Quienes Somos ---------------------------------------------------------- */
+.QuienesSomos {
+  background-color: var(--clr-font);
+  height: 100%;
+}
+
+.titulo_articulo {
+  color: #777;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 15px;
+}
+
+.card_QS {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "tl tl" "tx im";
+  justify-content: center;
+  align-items: center;
+  margin-inline: 10vw;
+}
+.card_QS_titulo {
+  grid-area: tl;
+  background-color: var(--clr-card-back);
+  height: 5vh;
+  width: 80vw;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: var(--clr-font);
+  text-align: center;
+  font-weight: 700;
+}
+.card_QS_texto {
+  grid-area: tx;
+  border-radius: 10px;
+  background-color: var(--clr-font);
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #777;
+}
+.card_QS_logo {
+  grid-area: im;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.card_QS_logo_img {
+  width: 90%;
+  border-radius: 5px;
+}
+
+picture :last-child {
+  margin-bottom: 40px;
+}
+
+/* ----------------------------------------------- Formulario de Contactos ------------------------------------------- */
+.section {
+  background-color: var(--clr-card-back);
+  padding-bottom: 4rem;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  border-top: var(--clr-card-back) 4px solid;
+}
+
+.titulo-formulario {
+  font-size: 2rem;
+  color: orange;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  padding: auto;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formulario .formulario_input {
+  padding: 5px;
+  margin: 5px;
+  width: 60vw;
+  border: 5px solid whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.formulario .formulario_input > input {
+  border-radius: 8px;
+  min-width: 50vw;
+}
+.formulario .formulario_input > input:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+.formulario .formulario_input > select {
+  border-radius: 8px;
+}
+.formulario .formulario_input > label {
+  text-align: center;
+  margin-bottom: 3px;
+}
+.formulario .formulario_input > p {
+  text-align: center;
+}
+.formulario .formulario_input :active {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+
 /* ------------------------------------------------- Mapa ------------------------------------------------------------- */
 .contact {
   color: var(--clr-font);
@@ -345,6 +463,37 @@ header {
   .card__container__gallery__product a {
     width: auto;
     font-weight: 600;
+  }
+}
+/* ------------------------------------------------- Pagina Quines Somos -------------------------------------- */
+@media screen and (max-width: 444px) {
+  .titulo_articulo {
+    font-size: 2rem;
+  }
+  .card_QS {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "tl" "tx" "im";
+    justify-content: center;
+    align-items: center;
+  }
+  .card_QS_titulo {
+    grid-area: tl;
+    font-size: 1.3rem;
+    align-self: flex-end;
+  }
+  .card_QS_texto {
+    grid-area: tx;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .card_QS_logo {
+    grid-area: im;
+  }
+  .card_QS_logo_img {
+    width: 90%;
+    border-radius: 5px;
   }
 }
 /* ------------------------------------------------- Mapa y Footer ---------------------------------------------------- */
