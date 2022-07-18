@@ -1,15 +1,15 @@
 /* ------------------------------------ Header ----------------------------------------------------------------------- */
 /*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
 header{
-    background: blueviolet;
+    background: var(--clr-violetae);
   }
 .header-Titulo-Imagen {
     display: flex;
     flex-direction: row;
     justify-content: start;
     padding: 10px;
-    color:  var(--clr-font);
-    background: blueviolet;
+    color:  var(--clr-ceniza);
+    background: var(--clr-violetae);
   }
 
   .header-img{
@@ -34,9 +34,9 @@ header{
     input {
         width: 55vw;
         height: 40px;
-        background-color: var(--clr-font);
+        background-color: var(--clr-ceniza);
         border-radius: 5px;
-        border:  var(--clr-font) 3px solid;
+        border:  var(--clr-ceniza) 3px solid;
       }
     
     &-icon{
@@ -45,14 +45,14 @@ header{
             height: 40px;
             padding: 2px;
             margin-bottom: 4px;
-            color: var(--clr-font);
-            background-color:  var(--clr-font);
-            border:  var(--clr-font) 3px solid;
+            color: var(--clr-ceniza);
+            background-color:  var(--clr-ceniza);
+            border:  var(--clr-ceniza) 3px solid;
             border-radius: 5px;
            }
          
         & :hover {
-            background-color: orange;
+            background-color: var(--clr-naranja);
             transform: scale(1.05);
             transition: all .3s;   
            }     
@@ -90,7 +90,7 @@ header{
     text-align: center;
     padding-right: 5px;
     transform: scale(1.01);
-    background: orange;
+    background: var(--clr-naranja);
     font-weight: 400;
     transition: all .3s;
     border-radius: 5px;

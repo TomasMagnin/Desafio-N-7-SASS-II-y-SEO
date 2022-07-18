@@ -2,11 +2,11 @@
 /* ------------------------------------------------ Main Paginas Secuandarias ------------------------------------------------------------- */
 
 .main__cards {
-    background-color: var(--clr-card-back);
-    color: var(--clr-font);
+    background-color: var(--clr-azulo);
+    color: var(--clr-ceniza);
   }
   .card {
-    background-color: orange;
+    background-color: var(--clr-naranja);
     img {
         margin: 2px;
         width: 100%;
@@ -15,12 +15,12 @@
       }
   }
   .title__cards {
-    background-color: orangered;
+    background-color: var(--clr-oranred);
     border-radius: 10px;
   }
   
   .card-body a:hover {
-    background-color: orangered;
+    background-color: var(--clr-oranred);
     transform: scale(1.05);
     transition: all .3s;
   }

@@ -1,12 +1,15 @@
 
 @import "base/reset";
+@import "base/typography";
 @import "utils/variables";
-@import "components/header";
-@import "base/animations";
+@import "components/buttons";
+@import "components/maps";
+@import "layout/header";
+@import "components/animations";
 @import "pages/home";
 @import "pages/autos-motos-bicicletas";
 @import "pages/quienessomos";
 @import "pages/contactos";
-@import "components/map";
-@import "components/footer";
-@import "base/_media-querys";
+@import "layout/map";
+@import "layout/footer";
+@import "layout/_media-querys";

@@ -1,8 +1,8 @@
 /* ------------------------------------------------ Footer ---------------------------------------------------------- */
 
 .footer{
-    border-top: 2px solid var(--clr-font);
-    background-color: var(--clr-card-back);
+    border-top: 2px solid var(--clr-ceniza);
+    background-color: var(--clr-azulo);
     height: 35vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -25,6 +25,9 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        img{
+            width: 50px;
+        }
     }
     &__sec-2{
         grid-area: fs2;
@@ -41,7 +44,7 @@
         align-items: center;
     }
     &__pie{
-        border: solid 2px orange;
+        border: solid 2px var(--clr-naranja);
         grid-area: fp;
         display: flex;
         flex-direction: row;
@@ -53,22 +56,22 @@
         font-weight: 700;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: var(--clr-font);
+        color: var(--clr-ceniza);
     }
     
     p{
-        color: var(--clr-font);
+        color: var(--clr-ceniza);
         text-align: center;
     }
     a{
-        color: whitesmoke;
+        color: var(--clr-ceniza);
         text-decoration: none;
     }
     li {
         list-style: none;
     }
     li :hover{
-        color: orangered;
+        color: var(--clr-oranred);
     
     }
 }
