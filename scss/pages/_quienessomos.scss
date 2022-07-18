@@ -9,6 +9,8 @@
     text-align: center;
     font-size: 3rem;
     padding-top: 15px;
+    position: relative;
+    top: 40px;
 }
 .card_QS{
     display: grid;
@@ -20,7 +22,6 @@
     justify-content: center;
     align-items: center;
     margin-inline: calc(10vw);   
-    
     &_titulo{
         grid-area: tl;
         background-color: var(--clr-card-back);
@@ -38,6 +39,7 @@
         background-color: var(--clr-font);
         text-align: justify;
         font-size: 1.5rem;
+        font-weight: 600;
         color: #777;
     }
     &_logo{
